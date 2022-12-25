@@ -9,4 +9,5 @@ WORKDIR /usr/src/wpp-server/
 RUN yarn cache clean
 COPY . .
 EXPOSE 3000
-ENTRYPOINT ["npm", "start"]
+ENTRYPOINT ["npm", "install"]
+CMD ["npm", "start"]
