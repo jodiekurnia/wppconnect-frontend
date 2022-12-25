@@ -9,4 +9,4 @@ WORKDIR /usr/src/wpp-server/
 RUN yarn cache clean
 COPY . .
 EXPOSE 3000
-ENTRYPOINT ["yarn", "start"]
+CMD ["yarn", "start"]
