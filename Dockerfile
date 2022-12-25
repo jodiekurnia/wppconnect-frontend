@@ -10,4 +10,4 @@ WORKDIR /usr/src/wpp-server/
 RUN yarn cache clean
 COPY . .
 EXPOSE 3000
-CMD ["npm", "run", "start"]
+CMD ["./node_modules/.bin/react-scripts", "start"]
